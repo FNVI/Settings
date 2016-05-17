@@ -1,0 +1,27 @@
+{
+    "name": "fnvi/settings",
+    "description": "Description of project Settings.",
+    "authors": [
+        {
+            "name": "Joe Wheatley",
+            "email": "joew@fnvi.co.uk"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:FNVI/mongo.git"
+        }
+    ],
+    "require": {
+        "fnvi/mongo": "0.1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "FNVi\\Settings\\": "src"
+        },
+        "files":[
+            "settings.php"
+        ]
+    }
+}

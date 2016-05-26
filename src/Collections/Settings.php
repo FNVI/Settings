@@ -2,6 +2,7 @@
 
 namespace FNVi\Settings\Collections;
 use FNVi\Mongo\Collection;
+use FNVi\Settings\Schemas\Settings as SettingsItem;
 /**
  * The settings collection
  *
@@ -9,6 +10,11 @@ use FNVi\Mongo\Collection;
  */
 class Settings extends Collection{
     
+    /**
+     * 
+     * @param string $name
+     * @return SettingsItem
+     */
     public function findByName($name){
         return $this->findOne(["name"=>$name]);
     }

@@ -14,7 +14,7 @@
         }
     ],
     "require": {
-        "fnvi/mongo": "0.1.2"
+        "fnvi/mongo": "dev-master"
     },
     "autoload": {
         "psr-4": {
